@@ -1,0 +1,143 @@
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, #ffe4e1, #fff0f5);
+    color: #5a2a27;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #a52a2a;
+    margin: 0;
+    text-shadow: 1px 1px 2px #ffccd5;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe4e1;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.partner-message {
+    justify-content: flex-start;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.message {
+    max-width: 70%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.partner-message .message {
+    background-color: #ffdae0;
+}
+
+.user-message .message {
+    background-color: #d1e7ff;
+}
+
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #000;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.back-icon i {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .message-container .profile-pic {
+        width: 35px;
+        height: 35px;
+    }
+
+    .message {
+        font-size: 0.9em;
+    }
+
+    .back-icon {
+        font-size: 16px;
+        top: 15px;
+        left: 15px;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .message-container .profile-pic {
+        width: 30px;
+        height: 30px;
+    }
+
+    .message {
+        font-size: 0.8em;
+    }
+
+    .back-icon {
+        font-size: 14px;
+        top: 10px;
+        left: 10px;
+        padding: 3px 6px;
+    }
+}

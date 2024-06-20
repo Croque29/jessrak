@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f2; /* Couleur de fond rose doux */
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style pour le texte d'introduction */
+.intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ff6699; /* Couleur rose pour le texte d'introduction */
+}
+
+/* Style pour le message de célébration */
+.celebration-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff6699; /* Couleur rose pour le message de célébration */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff; /* Couleur de fond blanche pour la carte */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s; /* Animation de transformation */
+    width: 300px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02); /* Animation de survol */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Animation de transformation */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Animation de survol pour l'image */
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem; /* Taille de police plus grande pour le titre */
+    margin: 10px 0;
+    color: #ff6699; /* Couleur rose pour le titre */
+}
+
+.card-description {
+    font-size: 1.1rem; /* Taille de police légèrement plus grande pour la description */
+    color: #666666; /* Couleur gris foncé pour la description */
+}
+
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #333333;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-icon:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.back-icon i {
+    margin-right: 5px;
+}

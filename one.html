@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Un An d'Amour</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="./css/one.css"> <!-- Votre fichier CSS personnalisé -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="./first.html" class="back-icon"><i class="fas fa-arrow-left"></i> </a>
+            <h1>Un An d'Amour</h1>
+            <p>Un voyage à travers les moments précieux que nous avons partagés</p>
+        </div>
+    </header>
+    <main class="timeline">
+        <div class="container">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="label"> 29 Novembre 2021</div>
+                    <div class="content">
+                        
+                        <p>Notre première rencontre, le début d'une belle aventure.</p>
+                        <img src="./img/faritany.jfif" alt="Première Rencontre">
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="label">17 Juin 2022</div>
+                    <div class="content">
+                       
+                        <p>Notre premier rendez-vous, Musée de la photographie</p>
+                        <img src="./img/17_june.jpeg" alt="Premier Rendez-vous">
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="label">21 Juin 2022</div>
+                    <div class="content">
+                      
+                        <p>Tu as dit oui 🥰</p>
+                        <img src="./img/21_june.jpeg" alt="Le commencement">
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="label">21 Juin 2023</div>
+                    <div class="content">
+                       
+                        <p>1 an</p>
+                        <img src="./img/2022_june.jpeg" alt="Anniversaire">
+                    </div>
+                </div>
+            </div>
+            <!-- Ajoutez plus de mois ici -->
+        </div>
+    </main>
+    <script>
+        // JavaScript peut être ajouté ici si nécessaire
+        document.addEventListener("DOMContentLoaded", () => {
+            const items = document.querySelectorAll('.timeline-item');
+            items.forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('visible');
+                }, index * 300);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE</title>
+    <link rel="stylesheet" href="./css/first.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2; /* Soft pink background color */
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .intro-container {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            color: #ff6699; /* Pink color for introduction text */
+        }
+
+        .celebration-message {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ff6699; /* Pink color for celebration message */
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff; /* White background color for the card */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 300px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5rem; /* Larger font size for title */
+            margin: 10px 0;
+            color: #ff6699; /* Pink color for title */
+        }
+
+        .card-description {
+            font-size: 1.1rem; /* Slightly larger font size for description */
+            color: #666666; /* Dark gray color for description */
+        }
+
+        .heart {
+            color: #ff6699; /* Pink color for heart */
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                transform: scale(1);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: scale(1.3);
+            }
+        }
+        .jess{
+            color: red;
+        }
+        .adri{
+            color: black;
+        }
+    </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <a href="./index.html" class="back-icon"><i class="fas fa-arrow-left"></i> </a>
+    <!-- Contenu d'introduction avec animations -->
+    <div class="intro-container">
+        <h1><span class="adri">ADRI</span> & <span class="jess">JESS</span>'s LOVE <span class="heart">&hearts;</span></h1>
+        <p class="intro-text">2021 | 2022-2023-2024</p>
+        <p class="celebration-message">HAPPY 2 YEARS <span class="heart">&hearts;</span></p>
+    </div>
+
+    <!-- Cartes avec contenu -->
+    <div class="card-container">
+        <div class="card">
+            <a href="./page_one.html">
+                <img src="./img/november.jpg" alt="Image 1">
+                <div class="card-content">
+                    <h2 class="card-title">LOVE AT FIRST SIGHT</h2>
+                    <p class="card-description">Le premier jour où on s'est rencontré</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./discussion.html">
+                <img src="./img/june.jpg" alt="Image 2">
+                <div class="card-content">
+                    <h2 class="card-title">YES</h2>
+                    <p class="card-description">Le début de l'aventure</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./one.html">
+                <img src="./img/oneyear.jpg" alt="Image 3">
+                <div class="card-content">
+                    <h2 class="card-title">One year</h2>
+                    <p class="card-description">1 an d'amour</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="./engaged.html">
+            <img src="./img/Chapelle.jfif" alt="Image 4">
+            <div class="card-content">
+                <h2 class="card-title">Chapelle</h2>
+                <p class="card-description">Voeux</p>
+            </div>
+        </a>
+        </div>
+        <div class="card">
+            <a href="./last.html">
+            <img src="./img/Twoyears.jpg" alt="Image 5">
+            <div class="card-content">
+                <h2 class="card-title">TWO YEARS</h2>
+                <p class="card-description">2 ans d'amour</p>
+            </div>
+        </a>
+        </div>
+    </div>
+</body>
+</html>

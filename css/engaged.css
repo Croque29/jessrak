@@ -1,0 +1,175 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f2; /* Soft pink background color */
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Utilisation de min-height au lieu de height */
+    position: relative; /* Position relative pour accueillir back-icon */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* Espacement entre le texte et l'image */
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff; /* Couleur de fond blanche pour le contenu */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Marge ajoutée pour séparer le contenu du haut */
+    margin-bottom: 20px; /* Marge ajoutée pour séparer le contenu du bas */
+}
+
+.image-container {
+    width: 50%; /* Conteneur d'image prend 50% de largeur */
+    max-height: 400px; /* Hauteur maximale pour le conteneur d'image */
+    overflow: hidden;
+    border-radius: 0 20px 20px 0; /* Coins arrondis pour le haut */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.text-container {
+    width: 50%; /* Conteneur de texte prend 50% de largeur */
+    padding: 40px; /* Rembourrage autour du texte */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-container h2 {
+    font-size: 2.5rem;
+    color: #ff6699; /* Couleur rose pour le titre */
+    margin-bottom: 20px;
+}
+
+.text-container h3 {
+    font-size: 1.8rem; /* Taille de police ajustée pour les écrans plus petits */
+    color: #ff6699; /* Couleur rose pour le titre */
+    margin-bottom: 10px; /* Marge réduite pour les écrans plus petits */
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    color: #666666; /* Couleur grise pour le texte */
+    line-height: 1.6;
+}
+
+/* Animation fadeInLeft pour l'image */
+.fadeInLeft {
+    animation: fadeInLeft 1s ease;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation fadeInUp pour le texte */
+.fadeInUp {
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media queries pour la réactivité */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container,
+    .text-container {
+        width: 100%; /* Largeur complète sur les écrans plus petits */
+        max-height: 300px; /* Hauteur maximale réduite pour les écrans plus petits */
+        border-radius: 20px; /* Coins arrondis ajustés */
+    }
+
+    .text-container {
+        padding: 20px; /* Rembourrage réduit sur les écrans plus petits */
+    }
+
+    .text-container h2 {
+        font-size: 2rem; /* Taille de police ajustée pour les écrans plus petits */
+    }
+
+    .text-container h3 {
+        font-size: 1.5rem; /* Taille de police ajustée pour les écrans plus petits */
+        margin-bottom: 10px; /* Marge réduite pour les écrans plus petits */
+    }
+
+    .text-container p {
+        font-size: 1rem; /* Taille de police ajustée pour les écrans plus petits */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container,
+    .text-container {
+        max-height: 250px; /* Hauteur maximale encore réduite pour les écrans plus petits */
+    }
+
+    .text-container h2 {
+        font-size: 1.8rem; /* Taille de police ajustée pour les écrans encore plus petits */
+    }
+
+    .text-container h3 {
+        font-size: 1.3rem; /* Taille de police ajustée pour les écrans encore plus petits */
+    }
+
+    .text-container p {
+        font-size: 0.9rem; /* Taille de police ajustée pour les écrans encore plus petits */
+    }
+}
+
+/* Styles du bouton de retour */
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #333333;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-icon:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.back-icon i {
+    margin-right: 5px;
+}

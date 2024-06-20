@@ -1,0 +1,113 @@
+/* Fonts and basic styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffe6e6; /* Light romantic pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-text {
+    font-size: 2.5em;
+    color: #ff6699; /* Romantic pink */
+    margin: 0;
+    position: relative;
+}
+
+.heart-icon {
+    font-size: 0.5em;
+    color: #ff0000; /* Red heart */
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.animated-text {
+    font-size: 1.2em;
+    color: #cc6699; /* Soft pinkish purple */
+    margin: 20px 0;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.explore-button {
+    display: inline-block;
+    background-color: #ff6699; /* Romantic pink */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #ff3366; /* Darker pink */
+}
+.letter {
+    opacity: 0;
+    animation: fadeIn 3s forwards infinite;
+}
+
+.letter:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.letter:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.letter:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.letter:nth-child(4) {
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.header-image {
+    margin-top: 20px;
+    width: 150px; /* Slightly larger image */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

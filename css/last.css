@@ -1,0 +1,79 @@
+/* Variables */
+:root {
+    --primary-color: #5b3f43; /* Couleur principale douce */
+    --secondary-color: #f5e3e0; /* Couleur de fond douce */
+    --background-color: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Georgia', serif; /* Police élégante */
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 15px; /* Bordures arrondies */
+    box-shadow: 0 0 15px var(--box-shadow-color); /* Ombre plus prononcée */
+  }
+  
+  /* Heading */
+  h1 {
+    color: var(--primary-color);
+    font-size: 28px; /* Taille de police plus grande */
+    font-weight: normal; /* Poids de la police normal */
+  }
+  
+  /* Video Container */
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover; /* Assure que la vidéo remplit entièrement le conteneur */
+  }
+  
+  /* Back Icon */
+  .back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 8px; /* Coins plus doux */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+  }
+  
+  .back-icon:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .back-icon i {
+    margin-right: 5px;
+  }
+  
